@@ -61,14 +61,17 @@ header {
   background: linear-gradient(245deg, #4d9559 0%, #38703d 29%, #133917 75%);
   position: relative;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 2fr;
   align-items: center;
   gap: 2rem;
   padding-left: 20%;
 
+  .hero-img img {
+    width: 100%;
+  }
+
   .hero-text {
     color: #fff;
-    width: 70%;
 
     h5 {
       font-size: 14px;
@@ -221,6 +224,7 @@ header {
 
     .hero-text {
       padding-top: 115px;
+      width: 70%;
     }
 
     .hero-img {
