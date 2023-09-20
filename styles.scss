@@ -97,7 +97,9 @@ header {
       line-height: 1.9;
       margin-bottom: 40px;
     }
+  }
 
+  .hero-buttons {
     a {
       display: inline-block;
       background: #4d9559;
@@ -197,19 +199,21 @@ header {
 }
 
 @media (max-width: 1340px) {
-  .hero .hero-img img {
-    width: 100%;
-    height: auto;
-  }
+  .hero {
+    .hero-text {
+      h1 {
+        font-size: 75px;
+        margin: 0 0 30px;
+      }
 
-  .hero-text {
-    h1 {
-      font-size: 75px;
-      margin: 0 0 30px;
+      h5 {
+        margin-bottom: 25px;
+      }
     }
 
-    h5 {
-      margin-bottom: 25px;
+    .hero-img img {
+      width: 100%;
+      height: auto;
     }
   }
 }
@@ -256,7 +260,6 @@ header {
     top: 100%;
     right: -100%;
     width: 300px;
-    height: 40vh;
     background: #4d9559;
     display: flex;
     flex-direction: column;
@@ -265,18 +268,24 @@ header {
     transition: all 500ms ease;
 
     a {
-        display: block;
-        margin: 7px 0;
+      display: block;
+      margin: 7px 0;
     }
 
     &.open {
-        right: 0;
+      right: 0;
+    }
+  }
+
+  .hero {
+    .hero-text {
+      width: 100%;
     }
   }
 }
 
 @media (max-width: 680px) {
-    .hero .hero-img img {
-        width: 100%;
-    }
+  .hero .hero-img img {
+    width: 100%;
+  }
 }

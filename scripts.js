@@ -13,7 +13,7 @@ const sr = ScrollReveal({
     reset: true
 });
 
-sr.reveal('.hero-text', { delay: 200, origin: 'top' });
+sr.reveal('.hero-description', { delay: 200, origin: 'top' });
 sr.reveal('.hero-img', { delay: 450, origin: 'top' });
 sr.reveal('.icons', { delay: 500, origin: 'left' });
 sr.reveal('.scroll-down', { delay: 500, origin: 'right' });
